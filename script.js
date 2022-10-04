@@ -137,6 +137,8 @@ function insertLetter (pressedKey) {
     nextLetter += 1
 }
 
+
+
 const animateCSS = (element, animation, prefix = 'animate__') =>
   // We create a Promise and return it
   new Promise((resolve, reject) => {
@@ -198,3 +200,8 @@ document.getElementById("keyboard-cont").addEventListener("click", (e) => {
 })
 
 initBoard();
+
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
