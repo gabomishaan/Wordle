@@ -15,7 +15,16 @@
 
 </head>
 <body>
- <button class="instructions" onclick="myFunction()">?</button>
+
+ <script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+   
+ <button class="instructions" onclick="myFunction()">FUCK</button>
 
 <div class="popup" onclick="myFunction()">
 
@@ -28,13 +37,7 @@ An incorrect letter turns gray.<br/>
 Letters can be used more than once.</span>
 </div>
 
-<script>
-// When the user clicks on div, open the popup
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
-</script>
+
 
     <h1> Wordle  </h1>
     

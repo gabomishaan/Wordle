@@ -137,6 +137,7 @@ h1 {
 }
 
 /* The actual popup */
+@media (min-width: 601px) {
 .popup .popuptext {
   visibility: hidden;
   width: 360px;
@@ -146,11 +147,29 @@ h1 {
   border-radius: 6px;
   padding: 8px 0;
   position: absolute;
-  z-index: 1;
-  top: -250%;
-  left: 0%;
-  margin-left: 10px;
+  z-index: 1000;
+  top: 20px;
   font-family: 'arial';
+}
+
+}
+
+
+@media (max-width: 600px) {
+ .popup .popuptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1000;
+  top: 20px;
+  font-family: 'arial';
+}
+
 }
 
 /* Toggle this class - hide and show the popup */
